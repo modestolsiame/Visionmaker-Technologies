@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visionmaker Technologies</title>
     <style>
-        /* Reset and general styles */
+        /* Reset some default styles */
         * {
             margin: 0;
             padding: 0;
@@ -29,41 +29,6 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-        }
-
-        /* Navigation styles */
-        nav {
-            background-color: #4CAF50;
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 10px 0;
-        }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            padding: 5px 10px;
-            transition: background 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background: #45a049;
-            border-radius: 5px;
         }
 
         /* Header styles */
@@ -94,13 +59,34 @@
             color: #4CAF50;
         }
 
+        /* Intro Section */
+        .intro p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
         /* About Section */
         .about p {
             font-size: 1.2rem;
             line-height: 1.8;
         }
 
-        /* Modestol Bio Section */
+        /* Quote Section */
+        .quote-section blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 5px solid #4CAF50;
+        }
+
+        .quote-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Modestol Siame Bio Section */
         .modestol-bio p {
             font-size: 1.2rem;
             line-height: 1.8;
@@ -110,38 +96,59 @@
         .review-section {
             background: #f9f9f9;
             padding: 40px 0;
-            display: flex;
-            gap: 20px;
         }
 
-        .review-content {
-            flex: 2;
+        .review-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
         }
 
-        iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
+        .review-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             font-size: 0.9rem;
         }
 
-        .review-quote {
-            flex: 1;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid #4CAF50;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .review-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
 
-        .review-quote p {
-            font-size: 1.1rem;
+        .review-form input,
+        .review-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .review-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .review-form button:hover {
+            background-color: #45a049;
+        }
+
+        .review-quote {
             font-style: italic;
-            text-align: center;
-            line-height: 1.5;
+            margin-top: 20px;
+            color: #555;
+            text-align: right;
+            padding-right: 20px;
         }
 
         /* Footer styles */
@@ -158,56 +165,44 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <h1>Visionmaker</h1>
-            <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#philosophy">Philosophy</a></li>
-                <li><a href="#modestol">Modestol Siame</a></li>
-                <li><a href="#review">Reviews</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Header -->
     <header>
         <div class="container">
             <h1>Visionmaker Technologies</h1>
-            <p class="subtitle">"Bridging purpose and innovation for a transformative tomorrow."</p>
+            <p class="subtitle">"Innovating for a brighter tomorrow, grounded in purpose and driven by technology."</p>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section class="intro">
         <div class="container">
-            <h2>About Us</h2>
-            <p>Visionmaker Technologies is where vision meets execution. With a relentless focus on advancing technology for human potential, our journey is driven by a deep-rooted purpose and an unwavering commitment to shaping the future.</p>
+            <h2>Welcome to Visionmaker Technologies</h2>
+            <p>At Visionmaker Technologies, we are on a mission to unlock the potential of human ingenuity through innovation, data, and technology. We push the boundaries of what's possible to create a better world for future generations.</p>
         </div>
     </section>
 
-    <!-- Modestol Bio -->
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Founded by Modestol Siame, Visionmaker Technologies was born out of a passion for excellence and a drive to make a global impact. With expertise in healthcare, data informatics, and public health, Modestol's vision is to bridge the gap between technological progress and societal development. At Visionmaker, we believe that innovation and purpose are intertwined, and that every step forward is a step toward a sustainable and meaningful future.</p>
+        </div>
+    </section>
+
     <section id="modestol" class="modestol-bio">
         <div class="container">
             <h2>About Modestol Siame</h2>
-            <p>Modestol Siame, a graduate of the University of Zambia and Oslo, is a thought leader and entrepreneur who embodies the art of creating from the unseen. As the author of *The Meteorite*, *Voice of Legacy*, and *Dreams of a Different Kind*, he crafts ideas that inspire innovation and ground-breaking solutions. His humility is matched only by his vision—a quiet force shaping a legacy for generations to come.</p>
+            <p>At the core of Visionmaker Technologies is Modestol Siame, a founder who believes in the transformative power of ideas grounded in purpose. Guided by a deep respect for data, innovation, and human potential, Modestol envisions VT as more than a company—it is a movement to align technology with meaning. Every project, every principle, and every book he’s authored speaks to VT's values: clarity of purpose, bold thinking, and a relentless pursuit of solutions that matter.</p>
         </div>
     </section>
 
-    <!-- Review Section -->
-    <section id="review" class="review-section">
-        <div class="container review-content">
+    <section class="review-section">
+        <div class="container">
             <h2>Leave a Review</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemDkFoFRImSUfrTWqA5A-Www_e4yVWFF4dAkB8Rdzl6hLYXQ/viewform?embedded=true"></iframe>
-        </div>
-        <div class="review-quote">
-            <p>"Every thought counts. Every word matters. Let your review be a part of the story that moves us all forward."</p>
+            <div class="review-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemDkFoFRImSUfrTWqA5A-Www_e4yVWFF4dAkB8Rdzl6hLYXQ/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <p class="review-quote">"Feedback is not just a gift; it’s the compass for meaningful innovation."</p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Visionmaker Technologies. All rights reserved.</p>
