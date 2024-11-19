@@ -92,6 +92,56 @@
             line-height: 1.8;
         }
 
+        /* Review Section */
+        .review-section {
+            background: #f9f9f9;
+            padding: 40px 0;
+        }
+
+        .review-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .review-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .review-form input,
+        .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .review-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .review-form button:hover {
+            background-color: #45a049;
+        }
+
         /* Footer styles */
         footer {
             background: #333;
@@ -140,7 +190,28 @@
     <section class="modestol-bio">
         <div class="container">
             <h2>About Modestol Siame</h2>
-            <p>Modestol Siame, also known as Visionmaker, is a visionary thought leader, healthcare informatician, and entrepreneur. With a background in Demography, Informatics, and Public Health, Modestol has dedicated what he terms as his 'Formative Phase of his life' to leveraging data and technology to improve lives globally. As a martial artist and a passionate advocate for soulful purpose, Modestol's work is driven by the desire to challenge the status quo and inspire others to realize their fullest potential.</p>
+            <p>Modestol Siame, also known as Visionmaker, is a visionary thought leader, healthcare informatician, and entrepreneur. With a background in Demography, Informatics, and Public Health, Modestol has dedicated his life to leveraging data and technology to improve lives globally. As a martial artist and a passionate advocate for soulful purpose, Modestol's work is driven by the desire to challenge the status quo and inspire others to realize their fullest potential.</p>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section class="review-section">
+        <div class="container">
+            <h2>Leave a Review</h2>
+            <div class="review-form">
+                <form action="submit_review.php" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                    <label for="review">Your Review</label>
+                    <textarea id="review" name="review" rows="5" required placeholder="Write your review here..."></textarea>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
         </div>
     </section>
 
