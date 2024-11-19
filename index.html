@@ -125,7 +125,7 @@
             line-height: 1.8;
         }
 
-        /* Modestol Siame Bio Section */
+        /* Modestol Bio Section */
         .modestol-bio p {
             font-size: 1.2rem;
             line-height: 1.8;
@@ -135,50 +135,36 @@
         .review-section {
             background: #f9f9f9;
             padding: 40px 0;
+            display: flex;
+            gap: 20px;
         }
 
-        .review-section h2 {
-            text-align: center;
-            margin-bottom: 30px;
+        .review-content {
+            flex: 2;
         }
 
-        .review-form {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
+        .review-quote {
+            flex: 1;
             padding: 20px;
+            background: white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #4CAF50;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        .review-form label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .review-form input,
-        .review-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .review-form button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
+        .review-quote p {
             font-size: 1.2rem;
-            border-radius: 5px;
-            width: 100%;
+            font-style: italic;
+            text-align: center;
         }
 
-        .review-form button:hover {
-            background-color: #45a049;
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
         }
 
         /* Footer styles */
@@ -234,7 +220,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Founded by Modestol Siame, Visionmaker Technologies was born out of a passion for excellence and a drive to make a global impact. With expertise in healthcare, data informatics, and public health, Modestol's vision is to bridge the gap between technological progress and societal development. At Visionmaker, we believe that innovation and purpose are intertwined, and that every step forward is a step toward a sustainable and meaningful future.</p>
+            <p>Founded by Modestol Siame, Visionmaker Technologies is driven by a passion for excellence and a commitment to making a global impact. Modestol, the author of *The Meteorite*, *Voice of Legacy*, and *Dreams of a Different Kind*, blends his expertise in Demography, Informatics, and Public Health with his creative and soulful approach to inspire groundbreaking ideas.</p>
         </div>
     </section>
 
@@ -253,15 +239,18 @@
     <section id="modestol" class="modestol-bio">
         <div class="container">
             <h2>About Modestol Siame</h2>
-            <p>Modestol Siame, also known as Visionmaker, is a visionary thought leader, healthcare informatician, and entrepreneur. With a background in Demography, Informatics, and Public Health, Modestol has dedicated his life to leveraging data and technology to improve lives globally. As a martial artist and a passionate advocate for soulful purpose, Modestol's work is driven by the desire to challenge the status quo and inspire others to realize their fullest potential.</p>
+            <p>Modestol Siame is a visionary leader, healthcare informatician, and entrepreneur. With a knack for connecting ideas, data, and people, he inspires others to explore the unknown. As an author of *The Meteorite*, *Voice of Legacy*, and *Dreams of a Different Kind*, Modestol’s work ignites innovation and purpose in every corner of life.</p>
         </div>
     </section>
 
     <!-- Review Section -->
     <section id="review" class="review-section">
-        <div class="container">
+        <div class="container review-content">
             <h2>Leave a Review</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemDkFoFRImSUfrTWqA5A-Www_e4yVWFF4dAkB8Rdzl6hLYXQ/viewform?embedded=true" width="640" height="969" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemDkFoFRImSUfrTWqA5A-Www_e4yVWFF4dAkB8Rdzl6hLYXQ/viewform?embedded=true"></iframe>
+        </div>
+        <div class="review-quote">
+            <p>"Your feedback is the spark that fuels innovation. Share your thoughts, and let’s create greatness together."</p>
         </div>
     </section>
 
