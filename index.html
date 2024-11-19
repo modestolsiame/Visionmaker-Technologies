@@ -23,6 +23,36 @@
             font-weight: 600;
         }
 
+        /* Navigation Styles */
+        nav {
+            background-color: #4CAF50;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            font-family: 'Georgia', serif;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d4e157;
+        }
+
         /* Container */
         .container {
             width: 90%;
@@ -165,6 +195,15 @@
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#modestol">About Modestol</a></li>
+            <li><a href="#review-section">Reviews</a></li>
+        </ul>
+    </nav>
+
     <header>
         <div class="container">
             <h1>Visionmaker Technologies</h1>
@@ -172,14 +211,14 @@
         </div>
     </header>
 
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <h2>Welcome to Visionmaker Technologies</h2>
             <p>At Visionmaker Technologies, we are on a mission to unlock the potential of human ingenuity through innovation, data, and technology. We push the boundaries of what's possible to create a better world for future generations.</p>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2>About Us</h2>
             <p>Founded by Modestol Siame, Visionmaker Technologies was born out of a passion for excellence and a drive to make a global impact. With expertise in healthcare, data informatics, and public health, Modestol's vision is to bridge the gap between technological progress and societal development. At Visionmaker, we believe that innovation and purpose are intertwined, and that every step forward is a step toward a sustainable and meaningful future.</p>
@@ -193,13 +232,13 @@
         </div>
     </section>
 
-    <section class="review-section">
+    <section class="review-section" id="review-section">
         <div class="container">
             <h2>Leave a Review</h2>
             <div class="review-form">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemDkFoFRImSUfrTWqA5A-Www_e4yVWFF4dAkB8Rdzl6hLYXQ/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
-            <p class="review-quote">"Feedback is not just a gift; it’s the compass for meaningful innovation."</p>
+            <p class="review-quote">"In the quiet of your review, the loudest lessons we hear."</p>
         </div>
     </section>
 
