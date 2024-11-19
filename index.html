@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visionmaker Technologies</title>
     <style>
-        /* Reset some default styles */
+        /* Reset and general styles */
         * {
             margin: 0;
             padding: 0;
@@ -29,6 +29,45 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #4CAF50;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #45a049;
+            border-radius: 5px;
         }
 
         /* Header styles */
@@ -153,9 +192,29 @@
         footer p {
             font-size: 1rem;
         }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1>Visionmaker</h1>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#modestol">Modestol Siame</a></li>
+                <li><a href="#review">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
     <header>
         <div class="container">
             <h1>Visionmaker Technologies</h1>
@@ -163,21 +222,24 @@
         </div>
     </header>
 
-    <section class="intro">
+    <!-- Intro Section -->
+    <section id="intro" class="intro">
         <div class="container">
             <h2>Welcome to Visionmaker Technologies</h2>
             <p>At Visionmaker Technologies, we are on a mission to unlock the potential of human ingenuity through innovation, data, and technology. We push the boundaries of what's possible to create a better world for future generations.</p>
         </div>
     </section>
 
-    <section class="about">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
             <h2>About Us</h2>
             <p>Founded by Modestol Siame, Visionmaker Technologies was born out of a passion for excellence and a drive to make a global impact. With expertise in healthcare, data informatics, and public health, Modestol's vision is to bridge the gap between technological progress and societal development. At Visionmaker, we believe that innovation and purpose are intertwined, and that every step forward is a step toward a sustainable and meaningful future.</p>
         </div>
     </section>
 
-    <section class="quote-section">
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="quote-section">
         <div class="container">
             <h2>Visionmaker's Philosophy</h2>
             <blockquote>
@@ -187,7 +249,8 @@
         </div>
     </section>
 
-    <section class="modestol-bio">
+    <!-- Modestol Bio -->
+    <section id="modestol" class="modestol-bio">
         <div class="container">
             <h2>About Modestol Siame</h2>
             <p>Modestol Siame, also known as Visionmaker, is a visionary thought leader, healthcare informatician, and entrepreneur. With a background in Demography, Informatics, and Public Health, Modestol has dedicated his life to leveraging data and technology to improve lives globally. As a martial artist and a passionate advocate for soulful purpose, Modestol's work is driven by the desire to challenge the status quo and inspire others to realize their fullest potential.</p>
@@ -195,12 +258,14 @@
     </section>
 
     <!-- Review Section -->
-    <section class="review-section">
+    <section id="review" class="review-section">
         <div class="container">
             <h2>Leave a Review</h2>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemDkFoFRImSUfrTWqA5A-Www_e4yVWFF4dAkB8Rdzl6hLYXQ/viewform?embedded=true" width="640" height="969" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Visionmaker Technologies. All rights reserved.</p>
